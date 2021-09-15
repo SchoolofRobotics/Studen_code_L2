@@ -253,8 +253,8 @@ if __name__ == "__main__":
         action_spec = spec.action_spec
         decision_steps, terminal_steps = env.get_steps(behavior_name)
         # Examine the number of observations per Agent
-        print("Number of observations : ", len(spec.observation_shapes))
-        print(" observations : ", spec.observation_shapes)
+        print("Number of observations : ", len(spec.observation_specs))
+        print(" observations : ", spec.observation_specs)
         # Is the Action continuous or multi-discrete ?
         if action_spec.is_continuous():
             print("The action is continuous")
